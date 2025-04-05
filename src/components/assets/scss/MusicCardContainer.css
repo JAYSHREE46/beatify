@@ -1,0 +1,78 @@
+.music-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.track-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.medium-card {
+  width: 30vh;
+  height: 30vh;
+  background-color: #181818;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.medium-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.6);
+}
+
+.medium-image {
+  width: 70%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #b3b3b3;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  background-color: #1db954;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttons button:hover {
+  background-color: #18a94a;
+}

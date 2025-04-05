@@ -1,0 +1,52 @@
+.top-tracks-container {
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .track-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .track-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #282828;
+  }
+  
+  .track-item:last-child {
+    border-bottom: none;
+  }
+  
+  .track-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  .track-info {
+    flex-grow: 1;
+  }
+  
+  .track-name {
+    font-size: 16px;
+    color: #1db954;
+    text-decoration: none;
+  }
+  
+  .track-name:hover {
+    text-decoration: underline;
+  }
+  
+  .track-artists {
+    font-size: 14px;
+    color: #b3b3b3;
+  }
+  

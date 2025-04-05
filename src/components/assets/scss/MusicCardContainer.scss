@@ -1,0 +1,107 @@
+/* Spotify-like Music Card Container */
+.music-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+  background: linear-gradient(to bottom, #121212, #181818); /* Spotify dark theme */
+  padding: 20px;
+}
+
+/* Music Card */
+.music-card {
+  width: 180px; /* Bigger for better UI */
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #181818;
+  box-shadow: 0 4px 12px rgba(11, 11, 11, 0.3);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+/* Image Styling */
+.music-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Song Title */
+.music-card .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 8px;
+  color: #ffffff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Artist Name */
+.music-card .artist {
+  font-size: 13px;
+  color: #50d00b;
+  margin-top: 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Hover Effect */
+.music-card:hover {
+  transform: scale(1.08);
+  background-color: #e9e4e4;
+}
+
+/* Spotify Play Button */
+.play-button {
+  width: 40px;
+  height: 40px;
+  background-color: #1db954;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.play-button:hover {
+  background-color: #1ed760;
+}
+
+.play-button svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+/* Responsive Design */
+@media (max-width: 970px) {
+  .music-card-container {
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .music-card {
+    width: 150px;
+    height: 220px;
+  }
+
+  .music-card .title {
+    font-size: 14px;
+  }
+
+  .music-card .artist {
+    font-size: 12px;
+  }
+}

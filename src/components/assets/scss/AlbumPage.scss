@@ -1,0 +1,43 @@
+.album-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: white;
+  
+    .album-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: #1db954;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  
+    img {
+      width: 150px;
+      border-radius: 10px;
+    }
+  
+    .tracklist {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+  
+      button {
+        background: white;
+        color: #1db954;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    }
+  }
+  
