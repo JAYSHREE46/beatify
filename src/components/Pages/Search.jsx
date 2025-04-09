@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const token ='BQAPpVvzeVnsJil3TaqMi8xHN89JqMcYZvlt3QJRGwlvCHJZ14A93ueAJ18cJS5yU6XCO5bQYcwzHwNReOtL9t37JAQOUjNG_q14Hj_Y9yOKEw3Soannv-p_lM2aU-y372sZhytMppHyW3Mn6Q4kEcQxJpgIq_L8c3qHBjgbkfsm6BdrwUV2YoRbIaBmmZb5GcdShLSNwUgPW3_qCl-9YgpdwWj0SO46qh4PZcRPPXdJzVS8UOGQD3Rqw6VgOeB0cXms3GzJQsLclaXjPzhoNwhT6kAHnCWkrCkuvDGqUQoCjA8sebaH3xru';
+const token ='BQCdya8qedaF5V_R6hyH5yA5VuC2Ydy8BQ6geMu-Imtr15GmcArc7Qh83dx3-V2a0cSPmgBioVJkpuo7p2wPkaVRC05nyzU2FBRz7Xhlovnj722qFHlUn-Nl1JcSViRlehkc9fxTmKuzCrKtSUki0qE-wEQinSUYiVz8_ONNW52c8eaAXxGa4e_8LYU_t50BL8Bui1wvSXV187Tw-A268xSoP7dljE__xO8_j-849QSjPL-0S_iXKcVqb8pY2ijfVkT7-DgW3_Ovl-YZYvbNEnBAIkOfkak-XoEwTG4Gpl6JtQCN9SjTWKJI';
 
 async function searchTracks(query) {
   const response = await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track&limit=10`, {

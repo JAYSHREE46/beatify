@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 
-const token = 'BQBLhm2JSzJswPG9XSSLc4sVugLtoUXrMzrBLlKSfo2_TP93IC7yiJZkV5-BxGqbXdv9-TKcMgMivtB7UyVufIIdlvPq8aAu5UA75zbamUkH-cjDfkEOxfkZdHFRjWaDdc53Jivvbbf_CxyaI2QvHfv6IAY9vmT_2V078BTOLTxwEudMRS4qubF56syUnlSxuUfBraXlwGTb0UtmKlULSjdI7CRQtrRGpPU8iVwTqzBMYuZHzxm8E37pug6jzPGc3b1GysGwSr-1eEhCjUmvelhChwq-vYbX0lrSkl9qbaTOysqfkwm3OwsC';
+const token = 'BQCdya8qedaF5V_R6hyH5yA5VuC2Ydy8BQ6geMu-Imtr15GmcArc7Qh83dx3-V2a0cSPmgBioVJkpuo7p2wPkaVRC05nyzU2FBRz7Xhlovnj722qFHlUn-Nl1JcSViRlehkc9fxTmKuzCrKtSUki0qE-wEQinSUYiVz8_ONNW52c8eaAXxGa4e_8LYU_t50BL8Bui1wvSXV187Tw-A268xSoP7dljE__xO8_j-849QSjPL-0S_iXKcVqb8pY2ijfVkT7-DgW3_Ovl-YZYvbNEnBAIkOfkak-XoEwTG4Gpl6JtQCN9SjTWKJI';
 
 async function fetchWebApi(endpoint, method = 'GET', body = null) {
   const response = await fetch(`https://api.spotify.com/${endpoint}`, {

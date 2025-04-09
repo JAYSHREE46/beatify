@@ -15,6 +15,7 @@ import CurrentPlayingLarge from "../fragment/CurrentPlayingLarge";
 import Search from "./Search";
 import About from "./About";
 import TrendingSong from "./TrendingSong";
+import Artist from "./Artist"; 
 import ArtistTopTracks from "./ArtistTopTracks";
 import Playlist from "../fragment/Playlist";
 import {Skeleton} from "@material-ui/lab";
@@ -31,17 +32,18 @@ function getCurrPage(pathName) {
             return <AddMusic/>
         case "/home/about":
             return <About/>
-            case "/home/TrendingSong":
-                return <TrendingSong/>
-            case "/home/ArtistTopTracks":
-                return <ArtistTopTracks/>
-           case "/home/artist":
-                return <Artist/>
+       case "/home/TrendingSong":
+            return <TrendingSong/>
+      case "/home/ArtistTopTracks":
+            return <ArtistTopTracks/>
+      case "/home/Artist":
+            return <Artist/>
+           
         default:
             if (pathName.startsWith("/home/playlist/")) {
                 return <Playlist/>
             }
-            return null
+            return null 
     }
 }
 
